@@ -1,8 +1,9 @@
 # Criador         : Brayan vieira 
 # função          : Gerador de senhas seguro  
-# versão          : 1.1
+# versão          : 1.2
 # data da criação : 15/2/2024
 # Notas versão 1.1: melhor nitidez e tratamento de erros
+# Notas versão 1.2: Melhor nitidez no menu
 #---------------------------------------------------------------------------------------
 #                                   configurando bibliotecas 
 import random
@@ -20,15 +21,25 @@ def gerar_senha(tamanho_da_senha, tipo_da_senha):
 #                       Variaveis padrões e menu 
 #
 ERRO_PADRAO = "você inseriu um caracter invalido"
-Opcao_a_b =   "[A] Criar uma senha com números                    [B] criar uma senha com caracteres Maiúsculos \n "
-Opcao_c_d =   "[C] Criar uma senha com caracteres minusculos       [D] criar uma senha com combinçacões de caracteres especiais  \n  "
-Opcao_all =   "[All] uma senha com todas essas opções"
+MENU = '''
+
+Bem-vindo ao Gerador de Senhas Seguras
+
+Escolha uma opção:
+
+[A] Criar uma senha com números
+[B] Criar uma senha com caracteres Maiúsculos
+[C] Criar uma senha com caracteres minúsculos
+[D] Criar uma senha com combinações de caracteres especiais
+[All] Uma senha com todas essas opções
+
+Digite a letra correspondente à opção desejada ou 'S' para sair: '''
 #---------------------------------------------------------------------------------------
 #                           Configurando o menu
 #
 print(" \n Bem vindo ao gerador de senhas seguras \n ")
 
-decisao_do_menu = input(f" {Opcao_a_b} \n {Opcao_c_d} \n {Opcao_all}  \n \n insira :  ").lower()
+decisao_do_menu = input(MENU).lower()
 match decisao_do_menu:
     case "a":
         tipo_senha = string.digits
