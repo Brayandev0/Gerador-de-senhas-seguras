@@ -2,6 +2,8 @@
 Copiar código
 # Gerador de Senhas Seguras
 
+![Captura de tela_2024-06-28_12-23-43](https://github.com/Brayandev0/Gerador-de-senhas-seguras/assets/84828739/1b1af26b-3963-487b-b72b-06d97fb5d555)
+
 ## Criador
 Brayan Vieira
 
